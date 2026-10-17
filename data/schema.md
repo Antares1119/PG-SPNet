@@ -23,4 +23,4 @@ The evaluation script uses the supplied held-out test file. At the time step giv
 - Verify that the three HDF5 files contain disjoint Re groups. Run `python -m data.inspect_split --train TRAIN.hdf5 --validation VALID.hdf5 --test TEST.hdf5 --output re_split.json` to export the exact case lists.
 - Supply the structural mass, stiffness, damping initialization, data time step, and ODE solver time step according to the actual model. These are required command-line values; this package does not substitute placeholder numbers.
 
-The CFD case files are available from the corresponding author upon request. Without them, exact Re group values and units cannot be verified from the source package alone.
+The CFD case files are available from the corresponding author upon request.
