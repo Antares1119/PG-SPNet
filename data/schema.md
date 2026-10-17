@@ -19,8 +19,8 @@ The evaluation script uses the supplied held-out test file. At the time step giv
 
 ## Validation before use
 
-- Verify that each case has the stated groups, shapes, ordering, time units, force and state units, and sensor orientation. The package does not encode units or a reference direction because these must be confirmed from the actual CFD case files.
+- Check each case's groups, array shapes, time and force units, and sensor ordering and orientation against the CFD files.
 - Verify that the three HDF5 files contain disjoint Re groups. Run `python -m data.inspect_split --train TRAIN.hdf5 --validation VALID.hdf5 --test TEST.hdf5 --output re_split.json` to export the exact case lists.
-- Supply the structural mass, stiffness, damping initialization, data time step, and ODE solver time step according to the actual model. These are required command-line values; this package does not substitute placeholder numbers.
+- Set the structural mass, stiffness, initial damping, data time step, and ODE solver time step for the case being used.
 
 The CFD case files are available from the corresponding author upon request.
