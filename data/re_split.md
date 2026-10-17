@@ -6,4 +6,4 @@ The source data consist of separate training, validation, and test HDF5 files wi
 python -m data.inspect_split --train /path/to/train.hdf5 --validation /path/to/validation.hdf5 --test /path/to/test.hdf5 --output re_split.json
 ```
 
-The script verifies that the three case lists are disjoint. The archive does not invent a case list without reading the underlying files.
+The script exports the Re values and checks that the three case lists are disjoint.
