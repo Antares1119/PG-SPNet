@@ -1,0 +1,9 @@
+__pycache__/
+*.py[cod]
+*.pth
+*.pt
+*.hdf5
+*.h5
+checkpoints/
+outputs/
+re_split.json
